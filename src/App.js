@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Mensaje from './Mensaje';
 
-function App() {
+// const Mensaje = () => {
+//   return  <h1>Hola Mundo desde Modulo</h1>
+// }
+
+const App = () => {
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      {/* <h1>Hola Mundo</h1> */}
+      {/* <Mensaje /> */}
+      <Mensaje color='green' message='Estamos trabajando' />
+      <Mensaje color='red' message='En un curso' />
+      <Mensaje color='yellow' message='De React' />
+  
     </div>
   );
 }
